@@ -39,6 +39,10 @@ class CommentRepository extends ServiceEntityRepository
         return new Paginator($query);
     }
 
+    public function findAll(): array
+    {
+        return $this->findBy([], ['year' => 'ASC', 'city' => 'ASC']);
+    }
 //    /**
 //     * @return Comment[] Returns an array of Comment objects
 //     */
