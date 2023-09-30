@@ -57,9 +57,6 @@ class CommentCrudController extends AbstractCrudController
             
             yield $createdAt->setFormTypeOption('disabled', true);
         
-        } else {
-
-            yield $createdAt;
-        } 
+        }
     }
 }
